@@ -7,7 +7,6 @@ import com.itextpdf.io.font.constants.StandardFonts;
 import com.itextpdf.kernel.geom.PageSize;
 import com.itextpdf.kernel.pdf.PdfDocument;
 import com.itextpdf.kernel.pdf.PdfWriter;
-import com.itextpdf.layout.Document;
 import com.itextpdf.layout.font.FontProvider;
 import org.springframework.stereotype.Service;
 import java.io.ByteArrayOutputStream;
@@ -36,12 +35,9 @@ public class PdfServiceImpl implements PdfService {
         return app.getStringFileFromResource(ORIG);
     }
 
-    private byte[] getBytesPDF(String html) throws IOException {
+    private byte[] getBytesPDF(String html) {
 
         ByteArrayOutputStream outputStream = new ByteArrayOutputStream();
-
-//        Document document = new Document(new PdfDocument(new PdfWriter(outputStream)));
-//        PdfDocument pdfDocument = new PdfDocument(new PdfWriter("pdf-test"));
 
         PdfDocument pdfDocument = new PdfDocument(new PdfWriter(outputStream));
 
@@ -51,16 +47,6 @@ public class PdfServiceImpl implements PdfService {
 
         byte[] bytes = outputStream.toByteArray();
         return Base64.getEncoder().encode(bytes);
-
-
-//        ConverterProperties converterProperties = getConverterProperties();
-//
-//        ByteArrayOutputStream outputStream = new ByteArrayOutputStream();
-//        generatePdf(outputStream);
-//        HtmlConverter.convertToPdf(html, outputStream, converterProperties);
-//
-//        byte[] bytes = outputStream.toByteArray();
-//        return Base64.getEncoder().encode(bytes);
     }
 
     private ConverterProperties getConverterProperties() {
