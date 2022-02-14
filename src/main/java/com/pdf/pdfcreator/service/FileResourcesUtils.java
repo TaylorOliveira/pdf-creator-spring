@@ -1,10 +1,10 @@
-package br.com.tribanco.receiptob.util;
+package com.pdf.pdfcreator.service;
 
+import org.apache.camel.model.Model;
+import org.apache.commons.io.IOUtils;
 import java.io.IOException;
 import java.io.InputStream;
 import java.nio.charset.StandardCharsets;
-import org.apache.camel.model.Model;
-import org.apache.commons.io.IOUtils;
 
 public class FileResourcesUtils {
 
