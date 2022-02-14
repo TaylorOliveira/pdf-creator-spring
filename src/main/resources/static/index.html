@@ -1,0 +1,449 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Comprovante-Openbanking</title>
+  <style>
+    @page {
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      margin: 0;
+      padding: 0;
+      background: #E5E5E5;
+      font-family: 'helvetica', sans-serif;
+    }
+
+    .mt-1 {
+      margin-top: 1rem;
+    }
+
+    .pt-1 {
+      padding-top: 1rem;
+    }
+
+    .pt-2 {
+      padding-top: 2rem;
+    }
+
+    .pb-2 {
+      padding-bottom: 2rem;
+    }
+
+    .row {
+      width: 432px;
+      margin: 0 auto;
+      overflow: auto;
+    }
+
+    .col {
+      padding: 0 20px;
+      float: left;
+    }
+
+    .col1 {
+      width: 16px;
+    }
+
+    .col2 {
+      width: 32px;
+    }
+
+    .col3 {
+      width: 68px;
+    }
+
+    .col4 {
+      width: 104px;
+    }
+
+    .col5 {
+      width: 140px;
+    }
+
+    .col6 {
+      width: 176px;
+    }
+
+    .col7 {
+      width: 212px;
+    }
+
+    .col8 {
+      width: 248px;
+    }
+
+    .col9 {
+      width: 284px;
+    }
+
+    .col10 {
+      width: 320px;
+    }
+
+    .col11 {
+      width: 356px;
+    }
+
+    .col12 {
+      width: 392px;
+    }
+
+    .bg-light {
+      background: #fff;
+    }
+
+    .container {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .container div {
+      height: 100%;
+    }
+
+    .f-t {
+      font-weight: 700;
+      padding-top: 5px;
+    }
+
+    .ar {
+      text-align: right;
+    }
+
+    .tx-b {
+      color: #054375;
+    }
+
+    .tx-g {
+      color: #607D8B;
+    }
+
+    .t-payer {
+      color: #37474F;
+      font-size: 18px;
+    }
+
+    .bd-bt {
+      border-bottom: 1px solid #ECEFF1;
+      margin: 0;
+    }
+
+    .card-info {
+      border-radius: 4px;
+      background: #F5F7F8;
+    }
+
+    .f-p {
+      line-height: 1.5;
+      white-space: normal;
+      font-size: 11px;
+    }
+
+    .f-pl {
+      margin-top: 0
+    }
+
+    h2 {
+      font-size: 30px;
+      font-weight: 700;
+    }
+
+    .footer {
+      margin: 0;
+      padding: 5px 20px;
+      color: #455A64;
+      font-size: 12px;
+    }
+  </style>
+</head>
+<body>
+<div class="container">
+  <div class="bg-light">
+    <div class="row pt-1">
+      <div class="col col6">
+        <svg width="140" height="32" viewBox="0 0 140 32" fill="none"
+             xmlns="http://www.w3.org/2000/svg">
+          <path
+              d="M5.168 16.79V25.5808C5.168 26.9594 5.90513 27.6882 7.30027 27.6882C8.02448 27.6882 8.9465 27.5423 9.91212 27.2765L10.4967 31.1962C9.28398 31.6788 7.15413 31.9992 5.86314 31.9992C1.91751 31.9992 0 30.1372 0 26.3064V16.79H5.168V16.79Z"
+              fill="#054375"/>
+          <path
+              d="M25.1698 9.36554C23.2515 9.95415 20.7341 11.4607 19.6426 12.1961L19.4375 12.3338L19.0613 9.77316H14.7249V31.5467H19.8928V17.3753L19.9655 17.3289C21.841 16.1239 23.5349 15.1187 25.6761 14.1453L25.1698 9.36554Z"
+              fill="#054375"/>
+          <path d="M29.0929 2.04872V7.97392H34.2609V1.31744L29.0929 2.04872Z" fill="#054375"/>
+          <path d="M34.2609 9.77234H29.0929V31.5459H34.2609V9.77234Z" fill="#054375"/>
+          <path
+              d="M56.3724 16.7362C56.3724 11.7452 54.2635 9.31907 49.9255 9.31907C47.4848 9.31907 45.0151 9.99165 43.5166 10.6218L43.301 10.7131V0L38.1331 0.727202V31.2565C40.7853 31.7693 44.2142 31.9992 46.4659 31.9992C54.7149 31.9992 56.3716 28.6404 56.3716 23.2223V16.7362H56.3724ZM51.2044 23.4032C51.2044 25.9925 50.4568 27.5969 46.7364 27.5969C45.4099 27.5969 44.3304 27.5373 43.4359 27.4142L43.301 27.3955V15.0486L43.3915 15.0062C44.7099 14.385 46.6823 13.7214 48.264 13.7214C50.2703 13.7214 51.2044 14.6361 51.2044 16.6V23.4032Z"
+              fill="#054375"/>
+          <path
+              d="M94.235 16.2821V31.5459H99.403V15.6935C99.403 11.4045 97.8383 9.31989 94.6177 9.31989C92.1488 9.31989 88.7376 10.2215 85.9279 11.6164L85.7616 11.6988L85.2029 9.77316H81.2985V31.5467H86.4665V16.2788L86.5496 16.2348C88.6439 15.1293 91.0192 14.3573 92.3264 14.3573C93.6287 14.3565 94.235 14.9679 94.235 16.2821Z"
+              fill="#054375"/>
+          <path
+              d="M112.721 27.552C109.548 27.552 108.477 26.5851 108.477 23.7212V17.5987C108.477 14.7339 109.548 13.767 112.721 13.767C113.658 13.767 115.571 13.9146 117.129 14.3173L117.758 10.087C116.116 9.55711 113.992 9.31989 112.587 9.31989C105.91 9.31989 103.309 11.6539 103.309 17.6435V23.6763C103.309 29.666 105.91 32 112.587 32C114.338 32 116.349 31.7008 117.758 31.2345L117.129 27.0009C115.679 27.3612 114.159 27.552 112.721 27.552Z"
+              fill="#054375"/>
+          <path
+              d="M129.834 31.9992C136.049 31.9992 139.2 29.1222 139.2 23.4481V17.8694C139.2 12.1953 136.049 9.31827 129.834 9.31827C123.618 9.31827 120.467 12.1953 120.467 17.8694V23.4481C120.467 29.1222 123.618 31.9992 129.834 31.9992ZM125.635 17.6884C125.635 14.9818 126.969 13.7206 129.834 13.7206C132.698 13.7206 134.032 14.9818 134.032 17.6884V23.6299C134.032 26.3365 132.698 27.5977 129.834 27.5977C126.969 27.5977 125.635 26.3365 125.635 23.6299V17.6884Z"
+              fill="#054375"/>
+          <path d="M0 14.9907H11.3436L10.6234 9.77234H5.168V3.53653L0 4.26373V14.9907Z"
+                fill="url(#paint0_linear_1501_377)"/>
+          <path
+              d="M68.2473 9.31908C65.8574 9.31908 62.9364 9.71854 60.9211 10.3161L61.5477 14.235C63.5863 13.8151 65.6879 13.5844 67.4835 13.5844C70.8858 13.5844 71.8175 14.1502 71.8175 16.8731V17.9802C69.355 18.0186 65.8364 18.4376 63.1535 19.7338C61.0229 20.7635 59.8271 22.4331 59.8271 25.5799C59.8271 27.9768 60.5481 31.9984 65.3762 31.9984C67.6563 31.9984 70.2956 31.3152 72.159 30.0744L72.339 29.9554L72.7686 31.5451H76.9855V17.1438C76.9847 11.367 74.6982 9.31908 68.2473 9.31908ZM71.8167 26.7148L71.7376 26.7604C70.9819 27.1917 69.074 27.914 67.1718 27.914C65.4755 27.914 64.8151 27.2463 64.8151 25.5343C64.8151 24.3065 65.1364 23.4334 65.8599 23.0356C67.3374 22.2236 69.0264 21.5747 69.9088 21.5747C71.2103 21.5747 71.8167 22.9059 71.8167 24.2201V26.7148Z"
+              fill="#054375"/>
+          <defs>
+            <linearGradient id="paint0_linear_1501_377" x1="5.66766" y1="14.9907" x2="5.66766"
+                            y2="3.53653"
+                            gradientUnits="userSpaceOnUse">
+              <stop offset="0.03125" stop-color="#8CD133"/>
+              <stop offset="0.958333" stop-color="#05BDFB"/>
+            </linearGradient>
+          </defs>
+        </svg>
+      </div>
+      <div class="col col6">
+        <p class="ar">Banco Triângulo S/A</p>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col col12">
+        <h2 class="tx-b">Comprovante de<br/>Envio de Pix</h2>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col col12">
+        <p class="tx-b" style="font-size: 11px">
+          ID do Pix: {{paymentId}}
+        </p>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col col12">
+        <h3 class="tx-g t-payer f-t">Recebedor</h3>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col col4">
+        <p class="tx-g f-t">
+          Valor
+        </p>
+      </div>
+      <div class="col col8">
+        <p class="ar">
+          R$ {{amount}}
+        </p>
+      </div>
+      <div class="col col12">
+        <p class="bd-bt"></p>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col col4">
+        <p class="tx-g f-t">
+          Data/hora
+        </p>
+      </div>
+      <div class="col col8">
+        <p class="ar">
+          {{dateTime}}
+        </p>
+      </div>
+      <div class="col col12">
+        <p class="bd-bt"></p>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col col6">
+        <p class="tx-g f-t">
+          Forma de pagamento
+        </p>
+      </div>
+      <div class="col col6">
+        <p class="ar">
+          {{paymentMethod}}
+        </p>
+      </div>
+      <div class="col col12">
+        <p class="bd-bt"></p>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col col12">
+        <p class="tx-g f-t">
+          Descrição
+        </p>
+      </div>
+      <div class="col col12">
+        <div class="card-info footer">
+          <p style="white-space: normal;">
+            {{description}}
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col col12">
+        <h3 class="t-payer">Pagador</h3>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col col5">
+        <p class="tx-g f-t">
+          Nome
+        </p>
+      </div>
+      <div class="col col7">
+        <p class="ar">
+          {{payerName}}
+        </p>
+      </div>
+      <div class="col col12">
+        <p class="bd-bt"></p>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col col5">
+        <p class="tx-g f-t">
+          CPF/CNPJ
+        </p>
+      </div>
+      <div class="col col7">
+        <p class="ar">
+          {{cpfCnpj}}
+        </p>
+      </div>
+      <div class="col col12">
+        <p class="bd-bt"></p>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col col5">
+        <p class="tx-g f-t">
+          Banco
+        </p>
+      </div>
+      <div class="col col7">
+        <p class="ar">
+          {{bank}}
+        </p>
+      </div>
+      <div class="col col12">
+        <p class="bd-bt"></p>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col col5">
+        <p class="tx-g f-t">
+          Agência
+        </p>
+      </div>
+      <div class="col col7">
+        <p class="ar">
+          {{issuer}}
+        </p>
+      </div>
+      <div class="col col12">
+        <p class="bd-bt"></p>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col col5">
+        <p class="tx-g f-t">
+          Conta Corrente
+        </p>
+      </div>
+      <div class="col col7">
+        <p class="ar">
+          {{numberAccount}}
+        </p>
+      </div>
+      <div class="col col12">
+        <p class="bd-bt"></p>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col col5">
+        <p class="tx-g f-t">
+          Tipo de conta
+        </p>
+      </div>
+      <div class="col col7">
+        <p class="ar">
+          {{accountType}}
+        </p>
+      </div>
+      <div class="col col12">
+        <p class="bd-bt"></p>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col col12 mt-1">
+        <div class="card-info footer">
+          <div style="float:left; padding-top: 12px;">
+            <svg width="16" height="16" viewBox="0 0 16 16" fill="none"
+                 xmlns="http://www.w3.org/2000/svg">
+              <path
+                  d="M8 0C3.57803 0 0 3.57834 0 8C0 12.422 3.57834 16 8 16C12.422 16 16 12.4217 16 8C16 3.57803 12.4216 0 8 0ZM8 14.75C4.26897 14.75 1.25 11.7308 1.25 8C1.25 4.26897 4.26922 1.25 8 1.25C11.731 1.25 14.75 4.26922 14.75 8C14.75 11.731 11.7308 14.75 8 14.75Z"
+                  fill="#90A4AE"/>
+              <path
+                  d="M8 6.69775C7.65481 6.69775 7.375 6.97757 7.375 7.32276V11.3475C7.375 11.6927 7.65481 11.9725 8 11.9725C8.34519 11.9725 8.625 11.6927 8.625 11.3475V7.32276C8.625 6.97757 8.34519 6.69775 8 6.69775Z"
+                  fill="#90A4AE"/>
+              <path
+                  d="M8 5.9325C8.46599 5.9325 8.84375 5.55474 8.84375 5.08875C8.84375 4.62275 8.46599 4.245 8 4.245C7.53401 4.245 7.15625 4.62275 7.15625 5.08875C7.15625 5.55474 7.53401 5.9325 8 5.9325Z"
+                  fill="#90A4AE"/>
+            </svg>
+          </div>
+          <p class="f-p" style="width: 305px; padding-left: 20px;">
+            Atestamos que a operação acima foi efetuada de acordo com os
+            dados informados pelo cliente. Data atual: <b>{{currentDate}}</b>
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <div class="row pb-2">
+      <div class="col col12 mt-1">
+        <div class="card-info footer">
+          <div style="float:left; padding-top: 17px;">
+            <svg width="16" height="16" viewBox="0 0 16 16" fill="none"
+                 xmlns="http://www.w3.org/2000/svg">
+              <path
+                  d="M8 0C3.57803 0 0 3.57834 0 8C0 12.422 3.57834 16 8 16C12.422 16 16 12.4217 16 8C16 3.57803 12.4216 0 8 0ZM8 14.75C4.26897 14.75 1.25 11.7308 1.25 8C1.25 4.26897 4.26922 1.25 8 1.25C11.731 1.25 14.75 4.26922 14.75 8C14.75 11.731 11.7308 14.75 8 14.75Z"
+                  fill="#90A4AE"/>
+              <path
+                  d="M4 4.88889C4 4.39797 4.39797 4 4.88889 4H6.34633C6.53763 4 6.70747 4.12241 6.76797 4.3039L7.43366 6.30098C7.5036 6.51081 7.40861 6.74014 7.21079 6.83905L6.20756 7.34067C6.69744 8.42721 7.57279 9.30256 8.65933 9.79244L9.16095 8.78921C9.25986 8.59139 9.48919 8.4964 9.69902 8.56634L11.6961 9.23203C11.8776 9.29253 12 9.46237 12 9.65367V11.1111C12 11.602 11.602 12 11.1111 12H10.6667C6.98477 12 4 9.01523 4 5.33333V4.88889Z"
+                  fill="#90A4AE"/>
+            </svg>
+          </div>
+          <div style="padding-left: 20px;">
+            <h4 style="margin-bottom: 0;">Central de Atendimento</h4>
+            <p class="f-p f-pl">
+              3003 3366 – Capitais e regiões metropolitanas.<br/>
+              0800 979 3355 – Demais regiões<br/>
+              0800 727 1247 – SAC<br/>
+              0800 727 4017 – Ouvidoria
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+</body>
+</html>
