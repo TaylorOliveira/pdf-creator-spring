@@ -59,10 +59,4 @@ public class PdfServiceImpl implements PdfService {
 
         return converterProperties.setFontProvider(fontProvider);
     }
-
-    private void generatePdf(OutputStream outputStream) {
-        PdfWriter pdfWriter = new PdfWriter(outputStream);
-        PdfDocument pdfDocument = new PdfDocument(pdfWriter);
-        pdfDocument.setDefaultPageSize(PageSize.A8);
-    }
 }
