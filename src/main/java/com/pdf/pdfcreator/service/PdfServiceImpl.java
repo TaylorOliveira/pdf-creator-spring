@@ -11,7 +11,6 @@ import com.itextpdf.layout.font.FontProvider;
 import org.springframework.stereotype.Service;
 import java.io.ByteArrayOutputStream;
 import java.io.IOException;
-import java.io.OutputStream;
 import java.util.Base64;
 
 @Service
