@@ -40,7 +40,7 @@ public class PdfServiceImpl implements PdfService {
 
         PdfDocument pdfDocument = new PdfDocument(new PdfWriter(outputStream));
 
-        pdfDocument.setDefaultPageSize(new PageSize(320, 872));
+        pdfDocument.setDefaultPageSize(new PageSize(320, 1190));
 
         HtmlConverter.convertToPdf(html, pdfDocument, getConverterProperties());
 
