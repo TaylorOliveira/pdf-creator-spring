@@ -5,8 +5,8 @@ import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
-
 import java.io.IOException;
+import java.text.ParseException;
 
 @RestController
 @RequestMapping("/pdf")
@@ -19,7 +19,7 @@ public class PdfCreatorController {
     }
 
     @GetMapping("/base-64")
-    public ResponseEntity<String> pdfCreator() throws IOException {
+    public ResponseEntity<String> pdfCreator() throws IOException, ParseException {
         return ResponseEntity.ok(pdfService.getBase64Pdf());
     }
 }
